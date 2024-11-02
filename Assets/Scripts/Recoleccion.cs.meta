@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9a655eebc4766d4478dc4e6da27d54cc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - maderaSprite: {fileID: 21300000, guid: 6e593d4809724364490c43e20e29ef5c, type: 3}
+  - rocaSprite: {fileID: 21300000, guid: 7b5c41354242dc8448c158ae85e5313d, type: 3}
+  - setaSprite: {fileID: 21300000, guid: e7fb0e75298bf3043a9abf831bcb20b0, type: 3}
+  - fondoPredeterminado: {fileID: 21300000, guid: a8d996cd4b1dee44bb11782d691a9ea9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
