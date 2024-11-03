@@ -29,15 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2446829401942333329}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 2.3300838, y: 0.195, z: 2.0125434}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9158268638161906812}
   - {fileID: 8528886292701760426}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &6690933546455859465
 BoxCollider:
@@ -47,17 +46,9 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2446829401942333329}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Size: {x: 0.04, y: 0.65, z: 0.12}
   m_Center: {x: 0, y: 0.32, z: 0}
 --- !u!65 &4809886487464942057
@@ -68,17 +59,9 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2446829401942333329}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Size: {x: 0.04, y: 0.08, z: 0.64}
   m_Center: {x: 0, y: 0.59, z: 0}
 --- !u!54 &5501577422708072527
@@ -88,21 +71,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2446829401942333329}
-  serializedVersion: 4
+  serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -135,30 +107,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  useDistance: -1
-  triggerType: 1
+  useDistance: 1.2
+  triggerType: 43
   key: 102
-  actionTemplate: {fileID: 0}
+  actionTemplate: {fileID: 11400000, guid: 4114e50432580d84b861b4d87c2a1c2a, type: 2}
   actions:
-  - rid: 0
-  - rid: 1
-  - rid: 2
-  - rid: 3
-  - rid: 4
-  - rid: 5
-  - rid: 6
-  - rid: 6091883818619764736
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
   m_Interruptable: 0
   references:
-    version: 2
-    RefIds:
-    - rid: 0
+    version: 1
+    00000000:
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: DevionGames.InventorySystem.CanPickup
         m_Enabled: 1
         m_WindowName: Inventory
-    - rid: 1
+    00000001:
       type: {class: SendMessage, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SendMessage
@@ -176,13 +146,13 @@ MonoBehaviour:
           m_ObjectValue: {fileID: 0}
           m_ArgumentType: 1
         m_Options: 1
-    - rid: 2
+    00000002:
       type: {class: LookAtTrigger, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookAtTrigger
         m_Enabled: 1
         m_Speed: 15
-    - rid: 3
+    00000003:
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
@@ -190,13 +160,13 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: Pickup
         m_TransitionDuration: 0.2
-    - rid: 4
+    00000004:
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.Wait
         m_Enabled: 1
         duration: 1
-    - rid: 5
+    00000005:
       type: {class: SendMessage, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SendMessage
@@ -214,18 +184,10 @@ MonoBehaviour:
           m_ObjectValue: {fileID: 0}
           m_ArgumentType: 1
         m_Options: 1
-    - rid: 6
+    00000006:
       type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
         m_Type: 
-        m_Enabled: 1
-        m_WindowName: Inventory
-        m_DestroyWhenEmpty: 1
-        m_Amount: -1
-    - rid: 6091883818619764736
-      type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
-      data:
-        m_Type: DevionGames.InventorySystem.Pickup
         m_Enabled: 1
         m_WindowName: Inventory
         m_DestroyWhenEmpty: 1
@@ -277,13 +239,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4240133620273469947}
-  serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0.018958561}
   m_LocalScale: {x: 59.453053, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5749168311128290889}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4807372798754941243
 MeshFilter:
@@ -304,12 +265,10 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -334,7 +293,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8058465128120493990
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,13 +318,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8058465128120493990}
-  serializedVersion: 2
   m_LocalRotation: {x: 0.00043602037, y: 0.70710665, z: 0.70710665, w: -0.00043602035}
   m_LocalPosition: {x: -0.000011958852, y: 0.5685331, z: 0.00000000834465}
   m_LocalScale: {x: 76.46843, y: 76.46843, z: 76.46843}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5749168311128290889}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7702451559169672079
 MeshFilter:
@@ -387,12 +344,10 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -417,4 +372,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
