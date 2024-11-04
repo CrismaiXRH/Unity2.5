@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI DialogueTXT; // Referencia al texto del diálogo
     public GameObject dialoguePanel; // Referencia al panel de diálogo
