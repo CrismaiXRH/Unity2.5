@@ -683,7 +683,7 @@ namespace DevionGames{
 
             EditorUtility.SetDirty(property.serializedObject.targetObject);
             property.serializedObject.ApplyModifiedProperties();
-            var prefabStage = UnityEditor.Experimental.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage();
+            var prefabStage = UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage();
             if (prefabStage != null)
             {
                 UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(prefabStage.scene);
